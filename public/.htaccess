@@ -11,14 +11,6 @@ Deny from all
 
 Options -Indexes
 
-#Redirecionamento para www e porta 80
-<IfModule mod_rewrite.c>
-RewriteEngine On
-
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R,L]
-</IfModule>
-
 #Url amigavel
 <IfModule mod_rewrite.c>
 RewriteEngine On
