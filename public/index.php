@@ -1,22 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+
 <head>
-<title>Mu Gomes</title>
-<style>
-  body { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>MGPage</title>
+
+  <link rel="canonical" href="https://<?php echo getenv('SERVER_NAME'); ?>" />
+
+  <style>
+    body {
+      text-align: center;
+      padding: 150px;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    body {
+      font: 20px Helvetica, sans-serif;
+      color: #333;
+    }
+
+    article {
+      display: block;
+      text-align: left;
+      width: 650px;
+      margin: 0 auto;
+    }
+
+    a {
+      color: #dc8100;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #333;
+      text-decoration: none;
+    }
+  </style>
 </head>
+
 <body>
-<article>
-    <h1>Em breve!</h1>
+  <article>
+    <h1>Em Desenvolvimento!</h1>
     <div>
-        <p>Em desenvolvimento!</p>
+      <p>Este sistema está em desenvolvimento, em breve disponível!</p>
     </div>
-</article>
+  </article>
 </body>
+
 </html>
