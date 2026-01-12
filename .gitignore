@@ -1,0 +1,8 @@
+# vendor
+vendor/
+
+# composer.lock
+composer.lock
+
+# error.log
+error.log
