@@ -1,6 +1,9 @@
 # vendor
 vendor/
 
+# teste
+teste/
+
 # composer.lock
 composer.lock
 
