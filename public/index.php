@@ -1,56 +1,22 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>MGPage</title>
-
-  <link rel="canonical" href="https://<?php echo getenv('SERVER_NAME'); ?>" />
-
-  <style>
-    body {
-      text-align: center;
-      padding: 150px;
+<?php
+if (ini_get('zlib.output_compression') == 'Off') {
+    if (extension_loaded('zlib')) {
+        ob_start('ob_gzhandler');
     }
+}
 
-    h1 {
-      font-size: 50px;
-    }
+header("Expires: Tue, 01 Jan 2000 00:00:00 GMT");
+header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
 
-    body {
-      font: 20px Helvetica, sans-serif;
-      color: #333;
-    }
+date_default_timezone_set("America/Sao_Paulo");
 
-    article {
-      display: block;
-      text-align: left;
-      width: 650px;
-      margin: 0 auto;
-    }
+define('MGPAGE', true);
 
-    a {
-      color: #dc8100;
-      text-decoration: none;
-    }
+session_name('3rh23fr38dh23nd237424');
+session_start();
 
-    a:hover {
-      color: #333;
-      text-decoration: none;
-    }
-  </style>
-</head>
-
-<body>
-  <article>
-    <h1>Em Desenvolvimento!</h1>
-    <div>
-      <p>Este sistema está em desenvolvimento, em breve disponível!</p>
-    </div>
-  </article>
-</body>
-
-</html>
+$publicDir = dirname(__FILE__);
+include_once(dirname($publicDir) . '/app/core/app.php');
